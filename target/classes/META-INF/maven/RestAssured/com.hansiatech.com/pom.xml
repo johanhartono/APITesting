@@ -12,36 +12,20 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<log4j-version>2.19.0</log4j-version>
 		<maven-surefire-plugin-version>3.0.0-M8</maven-surefire-plugin-version>
+		<RestAssured.version>5.5.0</RestAssured.version>
+		<JUnit.version>5.11.3</JUnit.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>rest-assured</artifactId>
-			<version>5.5.0</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
-			<version>5.11.3</version>
-			<scope>test</scope>
-		</dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>5.5.0</version>
+            <version>${RestAssured.version}</version>
             <scope>compile</scope>
         </dependency>
 		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>7.1.0</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-api</artifactId>
-			<version>5.11.3</version>
+			<version>${JUnit.version}</version>
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>

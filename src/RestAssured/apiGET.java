@@ -15,8 +15,8 @@ public class apiGET
 		var response = given().when().get(EndPoint).then().assertThat().statusCode(200);
 		response.log().all();
 	}
-	@Test
 	
+	@Test	
 	public void getaData() {
 		String EndPoint = url1 +"/2";
 		var response = given().when().get(EndPoint).then().assertThat().statusCode(200);
